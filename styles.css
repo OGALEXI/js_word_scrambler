@@ -17,6 +17,7 @@ body {
     color: white;
     padding: 5px 20px 5px;
     width: 100vw;
+    align-items: center;
 }
 
 #scrambie {
@@ -24,7 +25,7 @@ body {
 }
 
 #linkies {
-    width: 10rem;
+    width: 5rem;
     display: flex;
     flex-direction: row;
 }
@@ -166,4 +167,16 @@ body {
        padding: 15px;
        font-size: x-large;
     }
+}
+
+
+#kitty {
+    list-style-type: none;
+    height: 49px;
+    width: 48px;
+    color: white;
+}
+
+#kitty:hover {
+    color: rgb(255, 0, 200);
 }
