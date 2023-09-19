@@ -43,6 +43,7 @@ body {
     flex-direction: column;
     background: linear-gradient(to left top, rgb(255, 0, 200),rgb(111, 0, 255), rgb(111, 0, 255));
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     width: 50%;
     height: 70%;
 }
@@ -50,7 +51,7 @@ body {
 #user-stats {
     margin: 0px;
     display: flex;
-    padding: 20px 5px 5px;
+    padding-top: 20px;
     justify-content: space-evenly;
     margin-bottom: 10px;
 }
@@ -75,6 +76,14 @@ body {
     border-radius: 5px;
     padding: 5px 15px 5px;
     border: none;
+    width: 11rem;
+    height: 1.5rem;
+    transition: width 300ms, height 300ms;
+}
+
+#user-guess:hover {
+    width: 11.5rem;
+    height: 2rem;
 }
 
 .bottom-btn {
@@ -82,6 +91,12 @@ body {
     border-radius: 5px;
     padding: 5px 15px 5px;
     border: none;
+    width: 5rem;
+    height: 2rem;
+}
+
+.bottom-btn:hover {
+    background-color: rgba(255, 207, 245, 0.459);
 }
 
 #last-section {
@@ -89,4 +104,66 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+#scrambie-wrd {
+    font-size: xxx-large;
+    color: white;
+    padding: 0px;
+    margin:0px;
+}
+
+#info-boi {
+    display: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.loser {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    color: red;
+}
+
+.incorrect {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    color: red;
+}
+
+.correct {
+    background-color: white;
+    color: rgb(2, 172, 39);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#play-btn {
+    background-color: white;
+    padding: 10px;
+    font-size: larger;
+    border-radius: 5px;
+    border: none;
+    animation-name: my-animation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#play-btn:hover {
+    box-shadow: rgb(255, 0, 200) 0px 5px 15px;
+}
+
+@keyframes my-animation {
+    from {
+        padding: 10px;
+        font-size: larger;
+    }
+
+    to {
+       padding: 15px;
+       font-size: x-large;
+    }
 }
